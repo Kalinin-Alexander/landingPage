@@ -1,4 +1,4 @@
- **части страницы**
+ **Части страницы**
 ---
  + [HTML](https://github.com/Kalinin-Alexander/landingPage/blob/main/My_page/mainPage.html)
   + [CSS](https://github.com/Kalinin-Alexander/landingPage/blob/main/My_page/CSSCode.css)
