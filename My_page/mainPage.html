@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSCode.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Навигационная панель -->
+    <div class="novigationBar">
+        <button class="novigationBar_Btn" onclick="">Главная</button>
+        <button class="novigationBar_Btn">Обо мне</button>
+        <button class="novigationBar_Btn">Скилы</button>
+        <button class="novigationBar_Btn">Портфолио</button>
+        <button class="novigationBar_Btn">Контакты</button>
+    </div>
+
+    <!--Блок с представлением -->
+    <div class="enterBlock">
+        <div class="enterBlock_myIntroduce">Александр<br> Калинин</div>
+        <div class="enterBlock_post">Програмист-стажёр</div>
+        <div class="enterBlock_languages">eng|ru</div>        
+    </div>
+
+    <img class="foto" src="foto.jpg" alt="Фотография меня любимого">
+
+    <!--Блок с информацией обо мне -->
+    <div class="aboutMe">
+        <p class="title"> Обо мне </p>
+        <section class="aboutMe_info">
+            <p> Привет!</p>
+            <p> Я прохожу стажировку.</p>
+            <p> Готов взяться за работу!</p>
+        </section> 
+    </div>    
+
+    <!--Блок со скилами -->
+    <div class="skills">
+        <p class="title"> Мои навыки </p>
+        <!--Панель скилов -->
+        <div class="skills_bar">
+            <section class="skills_bar_form">
+                <img src="css.jpg" alt=" лого css">
+                <p id="cssName"></p>
+                <p id="cssLevel"></p>
+            </section>
+
+            <section class="skills_bar_form">
+                <img src="JS.png" alt=" лого js" class="JSlogo">
+                <p id="jsName"></p>
+                <p id="jsLevel"></p>
+            </section>
+
+            <section class="skills_bar_form">
+                <img src="html.jpg" alt=" лого html">
+                <p id="htmlName"></p>
+                <p id="htmlLevel"></p>
+            </section>
+
+        </div>
+    </div> 
+
+</body>
+</html>
