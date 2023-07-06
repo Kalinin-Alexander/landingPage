@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: beige;
     font-family: Arial, Helvetica, sans-serif;
@@ -21,6 +25,9 @@ body{
     background-color: rgba(140, 31, 190, 0.603);
     transition-property: background-color;
     transition-duration: 1s;
+    text-decoration-line: underline;
+    text-decoration-color: aqua;
+    color: aqua;
 }
 
 
@@ -53,7 +60,7 @@ body{
 .enterBlock_languages{
     display: inline-block;
     
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
 }
 
 .foto{
@@ -86,7 +93,7 @@ body{
     position: absolute;
     left: 50%;
     margin-top: 1350px;
-    margin-left: -180px;
+    margin-left: -304px;
     text-align: center;
 }
 
@@ -95,7 +102,7 @@ body{
     margin-left: 20px;
     margin-right: 20px;
 }
-.JSlogo{
-    width: 100px;
-    height: 100px;
+.logo{
+    width: 160px;
+    height: 120px;
 }
