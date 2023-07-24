@@ -42,7 +42,7 @@ body{
 
 .line{
     text-align: center;
-    
+    cursor: pointer;
     color: #828282;
 }
 
