@@ -6,48 +6,83 @@
     <link rel="stylesheet" href="CSSCode.css">
     <title>Document</title>
 </head>
+
+<!--Плавная прокрутка, общее выравнивание по центру -->
 <body>
 
-    <div class="a">
+    <!--Общая подложка, размер+цвет, шрифт -->
+    <div class="all">
+        
         <!--Навигационная панель -->
+
+        <!-- по середине отступ сверху 33 снизу 30 (от линии)-->
         <div class="nav-beg">
+
+            <!--Каждая кнопка в ряд, на одинаковом расстоянии, шрифт и цвет отличается от общего  -->
             <a class="nav-beg_Btn" href="#top">Главная</a>
             <a class="nav-beg_Btn" href="#about">Обо мне</a>
             <a class="nav-beg_Btn" href="#skill">Скилы</a>
             <a class="nav-beg_Btn" href="#portfolio">Портфолио</a>
             <a class="nav-beg_Btn" href="#contact">Контакты</a>
+
         </div>
 
-        <div class="line">____________________________________________________________________________________________________________________________</div>
+        <!--По середине, по длинне верхнего блока(не знаю как кроме добавления "_"), цвет как у внрхнего блока, снизу 40 (от имени)-->
+        <div class="line">____________________________________________________________________________________</div>
+
+
         <!--Блок с представлением -->
         
+        <!--Из трёх кусков, прижатых к краям   -->
         <div class="enter-block">
             <p><a id="top"></a></p>
-            <div class="enter-block_myIntroduce">Александр<br> Калинин</div>
-            <div class="enter-block_post">Програмист-стажёр</div>
-            <div class="enter-block_languages">RU|<b>ENG</b></div>        
+
+            <!-- край идёт на равне со словом главная из нав-бека, цвет как везде, размер больше, идет в две строки, отступ внешний снизу 30  -->
+            <div class="enter-block_my">Александр<br> Калинин</div>
+
+            <!-- тоже две строки  -->
+            <div class="enter-block_post">Програмист-стажёр <br> Санкт-Петербург</div>
+
+                <!--Ссылка для смены языка, повёрнуто на 90 градусов, язык страницы в блоке выделен тегом B  -->
+            <div class="enter-block_languages"><b style="color: #070707;">RU</b>|ENG</div>        
         </div>
         
 
+        <!--Фотка -->
         <img class="foto" src="foto.jpg" alt="Фотография меня любимого">
+
+
+
+
 
         <!--Блок с информацией обо мне -->
         
         <div class="about">
             <a id="about"></a>
-            <p class="title"> Обо мне </p>
+
+            <div class="inner-txt">
+            <p class="me-title"> Обо мне </p>
+
             <section class="about_info">
-                <p> Привет!</p>
-                <p> Я прохожу стажировку.</p>
+                <p> Привет! <br>Я заинтересован в любой похожей работе </p>
+                <p> Я прохожу стажировку. <br> Тренеруюсь на различных сайтах</p>
                 <p> Готов взяться за работу!</p>
             </section> 
+            </div>
+
+
         </div>    
+
+
 
         <!--Блок со скилами -->
         
         <div class="skills">
             <a id ="skill"></a>
-            <p class="title"> Мои навыки </p>
+            <p class="skill-title"> Мои навыки </p>
+
+            <p id="txt"> Я работаю в таких програмах как:</p>
+
             <!--Панель скилов -->
             <div class="skills-bar">
                 <section class="skills-bar_form">
@@ -66,6 +101,12 @@
                     <img src="HTML.png" alt=" лого html" class="logo">
                     <p id="htmlName"></p>
                     <p id="htmlLevel"></p>
+                </section>
+
+                <section class="skills-bar_form">
+                    <img src="PY.png" alt=" лого PY" class="logo">
+                    <p id="PYName"></p>
+                    <p id="PYLevel"></p>
                 </section>
 
             </div>
