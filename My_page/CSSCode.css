@@ -5,25 +5,33 @@ html{
 body{
     background-color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
-    width: 1445px;
-    height: 4759px;
     margin: 0 auto;
 }
 
-.novigationBar{
-    text-align: center;
+.a{
+    width: 1445px;
+    height: 4759px;
 }
-.novigationBar_Btn{
+
+.nav-beg{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+}
+.nav-beg_Btn{
     width: 150px;
     height: 35px;
     color: #828282;
     cursor: pointer;
     background-color: #FFF;
     border: #FFF;
-    
+    text-decoration: none;
+    margin-right: 150px;
+    padding-top: 30px;
 }
 
-.novigationBar_Btn:hover{
+.nav-beg_Btn:hover{
     background-color: rgba(220, 217, 221, 0.603);
     transition-property: background-color;
     transition-duration: 1s;
@@ -34,16 +42,16 @@ body{
 
 .line{
     text-align: center;
-    margin-bottom: 30px;
+    
     color: #828282;
 }
 
-.enterBlock{
+.enter-block{
     text-align: center;
     
 }
 
-.enterBlock_myIntroduce{
+.enter-block_myIntroduce{
     display: inline-block;
     width: 200px;
     height: 30px;
@@ -52,14 +60,14 @@ body{
 }
 
 
-.enterBlock_post{
+.enter-block_post{
     display: inline-block;
     width: 600px;
     height: 60px;
 }
 
 
-.enterBlock_languages{
+.enter-block_languages{
     display: inline-block;
     
     transform: rotate(-90deg);
@@ -84,7 +92,7 @@ body{
     
 }
 
-.aboutMe{
+.about{
     text-align: center;
     width: 1445px;
     height: 506px;
@@ -95,7 +103,7 @@ body{
     text-align: center;
 }
 
-.skills_bar_form{
+.skills-bar_form{
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
