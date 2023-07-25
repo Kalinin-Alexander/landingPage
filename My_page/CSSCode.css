@@ -35,6 +35,16 @@ body{
     cursor: pointer;
 }
 
+.nav-beg_Btn:hover{
+    color: rgb(0, 0, 0);
+    transition-property: color;
+    transition-duration: 1s;
+}
+
+
+
+
+
 .line{
     margin: 0 auto;
     display: flex;
@@ -91,6 +101,9 @@ body{
     margin-left: 250px;
 }
 
+
+
+
 .foto{
     width: 500px;
     display: block;
@@ -98,6 +111,10 @@ body{
     margin-right: auto;
     margin-bottom: 105px;
 }
+
+
+
+
 
 .about{
     width: 1445px;
@@ -125,6 +142,9 @@ body{
 
 
 
+
+
+
 .skills{
     text-align: center;
 }
@@ -137,7 +157,7 @@ body{
 
 .logo{
     width: 90px;
-    height: 90px;
+    
 }
 
 .skill-title{
@@ -154,4 +174,3 @@ body{
     margin-top: 70px;
     margin-bottom: 85px;
 }
-
