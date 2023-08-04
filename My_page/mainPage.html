@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSSCode.css">
+    <link rel="stylesheet" href="CSSCode2.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="header container">
+
+    <header class="header container">
 
         <a class="header_btn" href="#top">Главная</a>
         <a class="header_btn" href="#about">Обо мне</a>
@@ -15,38 +16,59 @@
         <a class="header_btn" href="#portfolio">Портфолио</a>
         <a class="header_btn" href="#contact">Контакты</a>
         
-    </div>
+    </header>
 
+    <!--
+    Если сделать вот так, то слетает стиль с space-between. Так происходит потому что он не наследуется?
+    Можно ли это обойти каким нибудь способом кроме создания доп класса или прописывания отдельного стиля прямо в html доке?
 
+    <header class="header">
+        <div class="container">
+            <a class="header_btn" href="#top">Главная</a>
+            <a class="header_btn" href="#about">Обо мне</a>
+            <a class="header_btn" href="#skill">Скилы</a>
+            <a class="header_btn" href="#portfolio">Портфолио</a>
+            <a class="header_btn" href="#contact">Контакты</a>
+        </div>
+        
+    </header>
 
-    <div class="info container" id="top">
+    -->
 
-        <div class="info_my">Александр<br> Калинин</div>
-        <div class="info_post">Програмист-стажёр <br> Санкт-Петербург</div>
-        <div class="info_languages"> <a class="activ" href="">RU</a> | <a class="inactiv"href="">ENG</a> </div>   
+    <div class="info" id="top">
+
+        <div class="container">
+            <div class="info_cnt">
+                <div class="info_my">Александр<br> Калинин</div>
+                <div class="info_post">Програмист-стажёр <br> Санкт-Петербург</div>
+                <div class="info_languages"> <a class="activ" href="">RU</a> | <a class="inactiv"href="">ENG</a> </div>   
+            </div>
+            <img class="info_foto container" src="foto.jpg" alt="Фотография меня любимого">
+        </div>
 
     </div>
 
     <!--Как при вставке в блок выше сделать расположение под тремя полями текста, а не на одном уровне?-->
-    <img class="info_foto container" src="foto.jpg" alt="Фотография меня любимого">
+    
 
+    <section class="block __grey" id="about">
 
-    <section class="bloc grey" id="about">
+        <h2 class="title"> Обо мне </h2>
 
-        <h2 class="title container"> Обо мне </h2>
+        <div class="about_txt">
 
-        <div class="about_txt container">
-
-            <p> Привет! <br>Я заинтересован в любой похожей работе </p>
-            <p> Я прохожу стажировку. <br> Тренеруюсь на различных сайтах</p>
-            <p> Готов взяться за работу!</p>
+            <div class="container">
+                <p> Привет! <br>Я заинтересован в любой похожей работе </p>
+                <p> Я прохожу стажировку. <br> Тренеруюсь на различных сайтах</p>
+                <p> Готов взяться за работу!</p>
+            </div>
 
         </div> 
 
     </section>    
 
 
-    <section class="bloc" id ="skill">
+    <section class="block" id ="skill">
 
         <h2 class="title container"> Мои навыки </h2>
         <p id="txt container"> Я работаю в таких програмах как:</p>
@@ -81,6 +103,8 @@
         </div>
 
     </section> 
+
+    <footer></footer>
 
     <script type="text/javascript" src="jsCode.js"></script>
 
