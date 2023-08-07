@@ -128,6 +128,15 @@ img{
     font-size: 14px;
 }
 
+.starfild{
+    display: flex;
+    justify-content: space-between;
+    width: 170px;
+}
+.star{
+    width: 34px;
+}
+
 .ad{
     display:grid;
     grid-row:auto;
