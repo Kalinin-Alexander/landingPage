@@ -71,8 +71,7 @@ img{
 }
 
 .info_languages:hover{
-    text-decoration: underline;
-    
+    text-decoration: underline;  
 } 
 
 .activ{
@@ -116,8 +115,7 @@ img{
 .skills-bar_form{
     display: inline-block;
     margin-left: 20px;
-    margin-right: 20px;
-    
+    margin-right: 20px; 
 }
 
 .logo{
@@ -133,12 +131,10 @@ img{
 .starfild{
     display: flex;
     justify-content: space-between;
-    
     width: 170px;
 }
 
 .star{
-    
     width: 26px;
 }
 
@@ -156,7 +152,6 @@ img{
 
 .link:hover{
     color: #828282;
-    
 }
 
 .projects_foto{
@@ -179,7 +174,6 @@ img{
 
 .contact_btn:hover{
     background-color: #828282;
-    
 }
 
 .contact_foto{
@@ -203,7 +197,6 @@ img{
 
 a{
     text-decoration: none;
-    
 }
 
 .modal{
@@ -218,10 +211,12 @@ a{
     overflow-y: auto;
     overflow-x: hidden;
 }
+
 .modal:target{
     opacity: 1;
     visibility: visible;
 }
+
 .modal_fild{
     position: absolute;
     width: 100%;
@@ -229,14 +224,15 @@ a{
     top: 0;
     left: 0;
 }
+
 .modal_body{
     min-height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 30px 10px;
-
 }
+
 .modal_content{
    background-color: aliceblue;
    color: black;
@@ -244,6 +240,7 @@ a{
    padding: 30px;
    position: relative;
 }
+
 .modal_close{
     position: absolute;
     right: 10px;
@@ -253,10 +250,12 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal_title{
     font-size: 40px;
     margin: 0px 0px 1em 0px;
 }
+
 .modal_txt{
     color: black;
 }
