@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSSCode.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -27,12 +27,10 @@
                 <div class="info_post">Програмист-стажёр <br> Санкт-Петербург</div>
                 <div class="info_languages"> <a class="activ" href="">RU</a> | <a class="inactiv"href="">ENG</a> </div>   
             </div>
-            <img class="info_foto " src="foto.jpg" alt="Фотография меня любимого">
+            <img class="info_foto " src="images/foto.jpg" alt="Фотография меня любимого">
         </div>
 
     </div>
-
-    <!--Как при вставке в блок выше сделать расположение под тремя полями текста, а не на одном уровне?-->
     
 
     <section class="block __grey" id="about">
@@ -61,25 +59,25 @@
             <div class="skills-bar">
 
                 <div class="skills-bar_form">
-                    <img src="CSS.png" alt=" лого css" class="logo">
+                    <img src="images/CSS.png" alt=" лого css" class="logo">
                     <p class="name" id="cssName"></p>
                     <p class="starfild" id="cssLevel"></p>
                 </div>
 
                 <div class="skills-bar_form">
-                    <img src="JS.png" alt=" лого js" class="logo">
+                    <img src="images/JS.png" alt=" лого js" class="logo">
                     <p class="name" id="jsName"></p>
                     <p class="starfild" id="jsLevel"></p>
                 </div>
 
                 <div class="skills-bar_form">
-                    <img src="HTML.png" alt=" лого html" class="logo">
+                    <img src="images/HTML.png" alt=" лого html" class="logo">
                     <p class="name" id="htmlName"></p>
                     <p class="starfild" id="htmlLevel"></p>
                 </div>
 
                 <div class="skills-bar_form">
-                    <img src="PY.png" alt=" лого PY" class="logo">
+                    <img src="images/PY.png" alt=" лого PY" class="logo">
                     <p class="name" id="PYName"></p>
                     <p class="starfild" id="PYLevel"></p>
                 </div>
@@ -91,17 +89,18 @@
     <section class="block __grey" id="portfolio">
 
         <div class="container">
-            <div class="ad">
+            <div class="projects">
                 <h2 class="title "> Портфолио </h2>
 
-                <img class="ad_foto" src="ad1.png" alt="Реклама 1">
-                <a class="link">Online fashion store - Homepage</a>
+                <img class="projects_foto" src="images/time.png" alt="Таймер">
+                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/16thWeek/ReadMe16.md">Таймер</a>
 
-                <img class="ad_foto" src="ad2.jpg" alt="Реклама 2">
-                <a class="link">Reebok Store - Concept</a>
-
-                <img class="ad_foto" src="ad3.png" alt="Реклама 3">
-                <a class="link">Braun Landing Page - Concept</a>
+                <img class="projects_foto" src="images/calc.png" alt="Калькулятор">
+                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/Colcolator/calculator.md">Калькулятор</a>
+                <!--
+                <img class="projects_foto" src="images/prg3.png" alt="Реклама 3">
+                <a class="link" href="">Braun Landing Page - Concept</a>
+                -->
             </div>
         </div>
 
@@ -116,23 +115,36 @@
 
                 <h2 class="title "> Контакты </h2>
                 <p id="txt "> Хотите узнать больше?<br> Всегда рад помочь!</p>
-                <button class="contact_btn">Отправить сообщение</button>
+                <a href="#modal"><button class="contact_btn" id="contact_btn" href="#modal">Отправить сообщение</button></a>
 
                 <div class="contact_foto">
-                    <a class="icn"><img src="icn1.png" alt="Иконка 1"></a>
-                    <a class="icn"><img src="icn2.png" alt="Иконка 2"></a>
-                    <a class="icn"><img src="icn3.png" alt="Иконка 3"></a>
-                    <a class="icn"><img src="icn4.jpg" alt="Иконка 4"></a>
+                    <a class="icn"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
+                    <a class="icn"><img src="images/whatsapp.svg" height="60px" width="60px" alt="Иконка 2"></a>
+                    <a class="icn"><img src="images/telegram.svg" height="60px" width="60px" alt="Иконка 3"></a>
+                    <a class="icn"><img src="images/google.svg" height="60px" width="60px" alt="Иконка 4"></a>
                 </div>
+
             </div>
 
             <p class="like">Оценити лайком этот сайт. <br> А также отслеживайте другие мои работы.</p>
 
         </div>
 
+        <div id="modal" class="modal">   
+            <a href="#contact_btn" class="modal_fild"></a> 
+            <div class="modal_body">
+                <div class="modal_content">
+                    <a href="#contact_btn" class="modal_close">[x]</a>
+                    <div class="modal_title">Сейчас поможем!</div>
+                    <div class="modal_txt">Почта + текст о том что и куда писать</div>
+                </div>
+                
+            </div>
+        </div>
+
     </footer>
 
-    <script type="text/javascript" src="jsCode.js"></script>
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
