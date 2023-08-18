@@ -173,7 +173,8 @@ img{
     margin-top: 30px;
     cursor: pointer;
     transition-property: background-color;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
+    margin: 0 auto;
 }
 
 .contact_btn:hover{
@@ -202,6 +203,7 @@ img{
 
 a{
     text-decoration: none;
+    
 }
 
 .modal{
