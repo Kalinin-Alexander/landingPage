@@ -65,7 +65,8 @@ window.onclick = function(event) {
   }
 }
 
-document.querySelector('.toSend_btn').onclick = function(){
+document.querySelector('.toSend_btn').onclick = function(event){
+    event.preventDefault();
     console.log(document.querySelector('#toSend_user').value);
     console.log(document.querySelector('#toSend_problem').value);
     modal.style.display = "none";
