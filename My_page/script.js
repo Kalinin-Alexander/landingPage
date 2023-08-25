@@ -45,10 +45,12 @@ genStar(skill.JavaScript,"#jsLevel")
 genStar(skill.HTML,"#htmlLevel")
 
 
+let modal = document.getElementById("modal");
 
-let modal = document.getElementById("myModal");
-let btn = document.getElementById("myBtn");
-let span = document.getElementsByClassName("close")[0];
+let btn = document.getElementById("contact_btn");
+
+let span = document.getElementsByClassName("modal_close")[0];
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -63,7 +65,8 @@ window.onclick = function(event) {
   }
 }
 
-document.querySelector('.send_Btn').onclick = function(){
-    console.log(document.querySelector('#user').value);
-    console.log(document.querySelector('#problem').value);
+document.querySelector('.toSend_btn').onclick = function(){
+    console.log(document.querySelector('#toSend_user').value);
+    console.log(document.querySelector('#toSend_problem').value);
+    modal.style.display = "none";
 }
