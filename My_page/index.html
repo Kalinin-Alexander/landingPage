@@ -115,7 +115,7 @@
 
                 <h2 class="title "> Контакты </h2>
                 <p id="txt "> Хотите узнать больше?<br> Всегда рад помочь!</p>
-                <div class="contact_btn" id="myBtn">Отправить сообщение</div>
+                <div class="contact_btn" id="contact_btn">Отправить сообщение</div>
 
                 <div class="contact_foto">
                     <a class="icn" data-title="Перейти в Вконтакте"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
@@ -130,19 +130,18 @@
 
         </div>
         
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <div class="modal-content">
+        <div id="modal" class="modal">
 
-                    <form name="my">
-                        <input type="text" id="user">
-                        <input type="text" id="problem">
-                        <button class="send_Btn"> Send </button>
-                    </form>
-
-                </div>
+            <div class="modal_content">
+                <span class="modal_close">&times;</span>
+                <form name="toSend">
+                    <input type="text" id="toSend_user" value="Введите ваше имя">
+                    <input type="text" id="toSend_problem" value="Ваш вопрос">
+                    <button class="toSend_btn"> Send </button>
+                </form>
+            
             </div>
+
         </div>
     </footer>
 
