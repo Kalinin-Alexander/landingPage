@@ -29,37 +29,6 @@
             </div>
             <img class="info_foto " src="images/foto.jpg" alt="Фотография меня любимого">
         </div>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-
-    <div class="container">
-        <header class="header">
-                <div class="header_menu">
-                    <a class="header_btn" href="#top">Главная</a>
-                    <a class="header_btn" href="#about">Обо мне</a>
-                    <a class="header_btn" href="#skill">Скилы</a>
-                    <a class="header_btn" href="#portfolio">Портфолио</a>
-                    <a class="header_btn" href="#contact">Контакты</a>
-                </div>
-        </header>
-    </div>
-    <div class="info" id="top">
-
-        <div class="container">
-            <div class="info_cnt">
-                <div class="info_my">Александр<br> Калинин</div>
-                <div class="info_post">Програмист-стажёр <br> Санкт-Петербург</div>
-                <div class="info_languages"> <a class="activ" href="">RU</a> | <a class="inactiv"href="">ENG</a> </div>   
-            </div>
-            <img class="info_foto " src="images/foto.jpg" alt="Фотография меня любимого">
-        </div>
 
     </div>
     
@@ -146,13 +115,13 @@
 
                 <h2 class="title "> Контакты </h2>
                 <p id="txt "> Хотите узнать больше?<br> Всегда рад помочь!</p>
-                <a href="#modal" ><div class="contact_btn" id="contact_btn">Отправить сообщение</div></a>
+                <div class="contact_btn" id="myBtn">Отправить сообщение</div>
 
                 <div class="contact_foto">
-                    <a class="icn"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
-                    <a class="icn"><img src="images/whatsapp.svg" height="60px" width="60px" alt="Иконка 2"></a>
-                    <a class="icn"><img src="images/telegram.svg" height="60px" width="60px" alt="Иконка 3"></a>
-                    <a class="icn"><img src="images/google.svg" height="60px" width="60px" alt="Иконка 4"></a>
+                    <a class="icn" data-title="Перейти в Вконтакте"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
+                    <a class="icn" data-title="Перейти в Ввотсап"><img src="images/whatsapp.svg" height="60px" width="60px" alt="Иконка 2"></a>
+                    <a class="icn" data-title="Перейти в Телеграмм"><img src="images/telegram.svg" height="60px" width="60px" alt="Иконка 3"></a>
+                    <a class="icn" data-title="Перейти в Гугл почту"><img src="images/google.svg" height="60px" width="60px" alt="Иконка 4"></a>
                 </div>
 
             </div>
@@ -160,19 +129,21 @@
             <p class="like">Оценити лайком этот сайт. <br> А также отслеживайте другие мои работы.</p>
 
         </div>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-content">
 
-        <div id="modal" class="modal">   
-            <a href="#contact_btn" class="modal_fild"></a> 
-            <div class="modal_body">
-                <div class="modal_content">
-                    <a href="#contact_btn" class="modal_close">[x]</a>
-                    <div class="modal_title">Сейчас поможем!</div>
-                    <div class="modal_txt">Почта + текст о том что и куда писать</div>
+                    <form name="my">
+                        <input type="text" id="user">
+                        <input type="text" id="problem">
+                        <button class="send_Btn"> Send </button>
+                    </form>
+
                 </div>
-                
             </div>
         </div>
-
     </footer>
 
     <script type="text/javascript" src="script.js"></script>
