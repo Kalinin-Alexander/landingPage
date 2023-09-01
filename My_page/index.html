@@ -139,28 +139,28 @@
                 <span class="modal_close">&times;</span>
 
 
-                <!-- Не смог выровнять через display:block; добавил лейблы -->
+                <!-- Не смог выровнять через display:block;-->
                 <form onsubmit="snd(event)" name="toSend" id="modal_form">
 
-                    <div class="form_inner">
+                    <div class="toSend_inner">
                         <label for="toSend_user">Имя пользователя</label><br>
                         <input type="text" id="toSend_user" placeholder="Введите ваше имя"><br>
 
-                        <label for="select">Должность</label><br>
-                        <select name="post" id="select">
+                        <label for="toSend_select">Должность</label><br>
+                        <select name="post" id="toSend_select">
                         <option value="">--Please choose an option--</option>
                         <option value="Студент">Студент</option>
                         <option value="Специалист">Специалист</option>
                         </select><br>
 
-                        <label for="textarea">Описание запроса</label><br>
-                        <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос" id ="textarea"></textarea><br>
+                        <label for="toSend_problem">Описание запроса</label><br>
+                        <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос"></textarea><br>
 
-                        <label for="email">email</label><br>
-                        <input type="email" id="email" placeholder="Введите ваш email"><br>
+                        <label for="toSend_email">email</label><br>
+                        <input type="email" id="toSend_email" placeholder="Введите ваш email"><br>
                         <div id="error"></div><br>
 
-                        <button class="toSend_btn" type="submit"> Send </button>
+                        <button class="contact_btn" type="submit"> Send </button>
                     </div>
 
                 </form>
