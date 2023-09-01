@@ -256,3 +256,11 @@ a{
 .toSend_btn{
     cursor: pointer;
 }
+
+.form_inner{
+    text-align: left;
+}
+
+#toSend_user,#select,#toSend_problem{
+    margin-bottom: 15px;
+}
