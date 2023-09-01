@@ -253,14 +253,11 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-.toSend_btn{
-    cursor: pointer;
-}
 
-.form_inner{
+.toSend_inner{
     text-align: left;
 }
 
-#toSend_user,#select,#toSend_problem{
+#toSend_user,#toSend_select,#toSend_problem{
     margin-bottom: 15px;
 }
