@@ -45,6 +45,10 @@ genStar(skill.JavaScript,"#jsLevel")
 genStar(skill.HTML,"#htmlLevel")
 
 
+
+
+
+
 let modal = document.getElementById("modal");
 
 let btn = document.getElementById("contact_btn");
@@ -65,9 +69,29 @@ window.onclick = function(event) {
   }
 }
 
-document.querySelector('.toSend_btn').onclick = function(event){
+// онсабмит от формы+ кнопки
+//document.querySelector('.toSend_btn').onclick =  
+function snd(event){
     event.preventDefault();
     console.log(document.querySelector('#toSend_user').value);
     console.log(document.querySelector('#toSend_problem').value);
+    console.log(document.querySelector('#select').value);
+    console.log(document.querySelector('#email').value);
     modal.style.display = "none";
 }
+
+
+input.onblur = function() {
+  if (!input.value.includes('@')) { // не email
+    input.classList.add('invalid');
+    error.innerHTML = 'Пожалуйста, введите правильный email.'
+  }
+};
+
+input.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
+    this.classList.remove('invalid');
+    error.innerHTML = "";
+  }
+};
