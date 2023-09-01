@@ -11,6 +11,7 @@
     <div class="container">
         <header class="header">
                 <div class="header_menu">
+                    <!--Нужен ли title="перейти к.." здесь?-->
                     <a class="header_btn" href="#top">Главная</a>
                     <a class="header_btn" href="#about">Обо мне</a>
                     <a class="header_btn" href="#skill">Скилы</a>
@@ -25,6 +26,8 @@
             <div class="info_cnt">
                 <div class="info_my">Александр<br> Калинин</div>
                 <div class="info_post">Програмист-стажёр <br> Санкт-Петербург</div>
+
+                <!--Нужен ли title="Сменить язык" здесь?-->
                 <div class="info_languages"> <a class="activ" href="">RU</a> | <a class="inactiv"href="">ENG</a> </div>   
             </div>
             <img class="info_foto " src="images/foto.jpg" alt="Фотография меня любимого">
@@ -93,10 +96,10 @@
                 <h2 class="title "> Портфолио </h2>
 
                 <img class="projects_foto" src="images/time.png" alt="Таймер">
-                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/16thWeek/ReadMe16.md">Таймер</a>
+                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/16thWeek/ReadMe16.md" title="Открыть код">Таймер</a>
 
                 <img class="projects_foto" src="images/calc.png" alt="Калькулятор">
-                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/Colcolator/calculator.md">Калькулятор</a>
+                <a class="link" href="https://github.com/Kalinin-Alexander/first_rep/blob/main/Colcolator/calculator.md" title="Открыть код">Калькулятор</a>
                 <!--
                 <img class="projects_foto" src="images/prg3.png" alt="Реклама 3">
                 <a class="link" href="">Braun Landing Page - Concept</a>
@@ -118,10 +121,10 @@
                 <div class="contact_btn" id="contact_btn">Отправить сообщение</div>
 
                 <div class="contact_foto">
-                    <a class="icn" data-title="Перейти в Вконтакте"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
-                    <a class="icn" data-title="Перейти в Ввотсап"><img src="images/whatsapp.svg" height="60px" width="60px" alt="Иконка 2"></a>
-                    <a class="icn" data-title="Перейти в Телеграмм"><img src="images/telegram.svg" height="60px" width="60px" alt="Иконка 3"></a>
-                    <a class="icn" data-title="Перейти в Гугл почту"><img src="images/google.svg" height="60px" width="60px" alt="Иконка 4"></a>
+                    <a class="icn" title="Перейти в Вконтакте"><img src="images/vk.svg" height="60px" width="60px" alt="Иконка 1"></a>
+                    <a class="icn" title="Перейти в Ввотсап"><img src="images/whatsapp.svg" height="60px" width="60px" alt="Иконка 2"></a>
+                    <a class="icn" title="Перейти в Телеграмм"><img src="images/telegram.svg" height="60px" width="60px" alt="Иконка 3"></a>
+                    <a class="icn" title="Перейти в Гугл почту"><img src="images/google.svg" height="60px" width="60px" alt="Иконка 4"></a>
                 </div>
 
             </div>
@@ -134,12 +137,34 @@
 
             <div class="modal_content">
                 <span class="modal_close">&times;</span>
-                <form name="toSend">
-                    <input type="text" id="toSend_user" value="Введите ваше имя">
-                    <textarea cols="30" rows="10" id="toSend_problem">Ваш вопрос</textarea>
-                    <button class="toSend_btn"> Send </button>
+
+
+                <!-- Не смог выровнять через display:block; добавил лейблы -->
+                <form onsubmit="snd(event)" name="toSend" id="modal_form">
+
+                    <div class="form_inner">
+                        <label for="toSend_user">Имя пользователя</label><br>
+                        <input type="text" id="toSend_user" placeholder="Введите ваше имя"><br>
+
+                        <label for="select">Должность</label><br>
+                        <select name="post" id="select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="Студент">Студент</option>
+                        <option value="Специалист">Специалист</option>
+                        </select><br>
+
+                        <label for="textarea">Описание запроса</label><br>
+                        <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос" id ="textarea"></textarea><br>
+
+                        <label for="email">email</label><br>
+                        <input type="email" id="email" placeholder="Введите ваш email"><br>
+                        <div id="error"></div><br>
+
+                        <button class="toSend_btn" type="submit"> Send </button>
+                    </div>
+
                 </form>
-            
+
             </div>
 
         </div>
@@ -149,4 +174,3 @@
 
 </body>
 </html>
-
