@@ -75,14 +75,14 @@ function snd(event){
     event.preventDefault();
     console.log(document.querySelector('#toSend_user').value);
     console.log(document.querySelector('#toSend_problem').value);
-    console.log(document.querySelector('#select').value);
-    console.log(document.querySelector('#email').value);
+    console.log(document.querySelector('#toSend_select').value);
+    console.log(document.querySelector('#toSend_email').value);
     modal.style.display = "none";
 }
 
 
 input.onblur = function() {
-  if (!input.value.includes('@')) { // не email
+  if (!input.value.includes('@')) { 
     input.classList.add('invalid');
     error.innerHTML = 'Пожалуйста, введите правильный email.'
   }
@@ -90,7 +90,6 @@ input.onblur = function() {
 
 input.onfocus = function() {
   if (this.classList.contains('invalid')) {
-    // удаляем индикатор ошибки, т.к. пользователь хочет ввести данные заново
     this.classList.remove('invalid');
     error.innerHTML = "";
   }
