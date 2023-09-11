@@ -238,6 +238,9 @@ a{
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
+    max-width: 600px;
+    /*Не выходит центрирование*/
+    text-align: center;
 }
 
 .modal_close {
@@ -252,6 +255,18 @@ a{
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+#toSend_user:focus,
+#toSend_problem:focus,
+#input:focus{ 
+    outline: 1px solid rgb(75, 193, 214); 
+    border-radius: 2 px;
+}
+
+.modal_form{
+    /*Не сработало*/
+    display: inline-block;
 }
 
 .toSend_inner{
