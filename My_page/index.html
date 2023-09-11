@@ -133,42 +133,47 @@
 
         </div>
         
-        <div id="modal" class="modal">
+    </footer>
 
-            <div class="modal_content">
-                <span class="modal_close">&times;</span>
+    <div id="modal" class="modal">
+
+        <div class="modal_content">
+            <span class="modal_close">&times;</span>
+
+            <form onsubmit="snd(event)" name="toSend" id="modal_form" class="modal_form">
+
+                <div class="toSend_inner"> 
+                    <label for="toSend_user">Имя пользователя</label><br>
+                    <input type="text" id="toSend_user" placeholder="Введите ваше имя"><br>
+
+                    <label for="toSend_select">Должность</label><br>
+                    <select name="post" id="toSend_select">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Студент">Студент</option>
+                    <option value="Специалист">Специалист</option>
+                    </select><br>
+
+                    <label for="toSend_problem">Описание запроса</label><br>
+                    <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос"></textarea><br>
+                    
+                    <!--Покажет что какое-то поле не заполненно-->
+                    <div id="txterr"></div><br>
 
 
-                <form onsubmit="snd(event)" name="toSend" id="modal_form">
+                    <label for="input">email</label><br>
+                    <input type="email" id="input" placeholder="Введите ваш email"><br>
 
-                    <!-- Не смог выровнять через display:block или как либо ещё-->
-                    <div class="toSend_inner">
-                        <label for="toSend_user">Имя пользователя</label><br>
-                        <input type="text" id="toSend_user" placeholder="Введите ваше имя"><br>
+                    <!--Покажет что почтовое поле не заполненно-->
+                    <div id="error"></div><br>
 
-                        <label for="toSend_select">Должность</label><br>
-                        <select name="post" id="toSend_select">
-                        <option value="">--Please choose an option--</option>
-                        <option value="Студент">Студент</option>
-                        <option value="Специалист">Специалист</option>
-                        </select><br>
+                    <button class="contact_btn" type="submit"> Send </button>
+                </div>
 
-                        <label for="toSend_problem">Описание запроса</label><br>
-                        <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос"></textarea><br>
-
-                        <label for="input">email</label><br>
-                        <input type="email" id="input" placeholder="Введите ваш email"><br>
-                        <div id="error"></div><br>
-
-                        <button class="contact_btn" type="submit"> Send </button>
-                    </div>
-
-                </form>
-
-            </div>
+            </form>
 
         </div>
-    </footer>
+
+    </div>
 
     <script type="text/javascript" src="script.js"></script>
 
