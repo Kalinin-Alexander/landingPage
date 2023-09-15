@@ -120,7 +120,6 @@ a{
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
-    
 }
 
 .logo{
@@ -136,12 +135,10 @@ a{
 .starfild{
     display: flex;
     justify-content: space-between;
-    
     width: 170px;
 }
 
 .star{
-    
     width: 26px;
 }
 
@@ -182,7 +179,6 @@ a{
 
 .contact_btn:hover{
     background-color: #828282;
-    
 }
 
 .contact_foto{
@@ -239,8 +235,9 @@ a{
     border: 1px solid #888;
     width: 80%; 
     max-width: 600px;
-    /*Не выходит центрирование*/
     text-align: center;
+    /*fffffffff*/
+    box-shadow: 0 4px 16px #ccc;
 }
 
 .modal_close {
@@ -257,15 +254,12 @@ a{
     cursor: pointer;
 }
 
-#toSend_user:focus,
-#toSend_problem:focus,
-#input:focus{ 
-    outline: 1px solid rgb(75, 193, 214); 
-    border-radius: 2 px;
+#error,
+#txterr{
+    color: #EF4E4E;
 }
 
 .modal_form{
-    /*Не сработало*/
     display: inline-block;
 }
 
@@ -273,6 +267,29 @@ a{
     text-align: left;
 }
 
-#toSend_user,#toSend_select,#toSend_problem{
-    margin-bottom: 15px;
+.enter{
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border: 2px solid #BCCCDC;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#toSend_user:focus,
+#toSend_problem:focus,
+#input:focus{ 
+    outline:none;
+    border: 3px solid #2186EB;
+}
+
+.__notxt{
+    border-color: #EF4E4E;
+}
+
+.__invalid{
+    border-color: #EF4E4E;
+}
+
+#contact_btn{
+    text-align: center;
 }
