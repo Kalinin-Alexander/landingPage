@@ -46,7 +46,9 @@ genStar(skill.HTML,"#htmlLevel")
 
 
 let modal = document.getElementById("modal");
+
 let btn = document.getElementById("contact_btn");
+
 let span = document.getElementsByClassName("modal_close")[0];
 
 btn.onclick = function() {
@@ -78,7 +80,6 @@ function snd(event){
 
   console.log(user);
   modal.style.display = "none";
-
 }
 
 
@@ -97,7 +98,11 @@ toSend_user.onfocus = function() {
   }
 };
 
-//проверка и вывод в случае с полем селектора
+//проверка и вывод в случае с полем селектора 
+/*Должно быть по другому, 
+выдает ошибку Cannot read properties of null хотя есть value студент/специалист
+на отправку формы не влияет
+*/
 toSend_select.onblur = function() {
   if (!document.getElementById("toSend_toSend_select").value) { 
     toSend_select.classList.add('__notxt');
@@ -126,6 +131,7 @@ toSend_problem.onfocus = function() {
     txterr.innerHTML = "";
   }
 };
+
 
 //проверка и вывод в случае с почтой
 input.onblur = function() {
