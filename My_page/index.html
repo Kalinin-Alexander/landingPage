@@ -11,7 +11,7 @@
     <div class="container">
         <header class="header">
                 <div class="header_menu">
-                    <!--Нужен ли title="перейти к.." здесь?-->
+                    
                     <a class="header_btn" href="#top">Главная</a>
                     <a class="header_btn" href="#about">Обо мне</a>
                     <a class="header_btn" href="#skill">Скилы</a>
@@ -144,29 +144,29 @@
 
                 <div class="toSend_inner"> 
                     <label for="toSend_user">Имя пользователя</label><br>
-                    <input type="text" id="toSend_user" placeholder="Введите ваше имя"><br>
+                    <input type="text" id="toSend_user" class="enter" placeholder="Введите ваше имя"><br>
 
                     <label for="toSend_select">Должность</label><br>
-                    <select name="post" id="toSend_select">
+                    <select name="post" id="toSend_select" class="enter">
                     <option value="">--Please choose an option--</option>
                     <option value="Студент">Студент</option>
                     <option value="Специалист">Специалист</option>
                     </select><br>
 
                     <label for="toSend_problem">Описание запроса</label><br>
-                    <textarea cols="30" rows="10" id="toSend_problem" placeholder="Введите ваш запрос"></textarea><br>
+                    <textarea cols="30" rows="10" id="toSend_problem" class="enter" placeholder="Введите ваш запрос"></textarea><br>
                     
                     <!--Покажет что какое-то поле не заполненно-->
                     <div id="txterr"></div><br>
 
 
-                    <label for="input">email</label><br>
-                    <input type="email" id="input" placeholder="Введите ваш email"><br>
+                    <label for="input">Email</label><br>
+                    <input type="email" id="input" class="enter" placeholder="Введите ваш email"><br>
 
                     <!--Покажет что почтовое поле не заполненно-->
                     <div id="error"></div><br>
 
-                    <button class="contact_btn" type="submit"> Send </button>
+                    <div id="contact_btn"><button  class="contact_btn" type="submit"> Send </button> </div>
                 </div>
 
             </form>
