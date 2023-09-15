@@ -45,14 +45,8 @@ genStar(skill.JavaScript,"#jsLevel")
 genStar(skill.HTML,"#htmlLevel")
 
 
-
-
-
-
 let modal = document.getElementById("modal");
-
 let btn = document.getElementById("contact_btn");
-
 let span = document.getElementsByClassName("modal_close")[0];
 
 btn.onclick = function() {
@@ -81,23 +75,7 @@ function snd(event){
     post: document.querySelector('#toSend_select').value,
     email: document.querySelector('#input').value,        
   }; 
-/*
-  if (user.name == ""){
-    console.log('не заполненно')
-  } else if (user.massage == ""){
-    console.log('не заполненно')
-  } else if(user.post == ""){
-    console.log('не заполненно')
-  }
-*/
-/*
-  function sndcek(){
-    if (!document.getElementById("toSend_user").value || !document.getElementById("toSend_problem").value || !document.getElementById("toSend_toSend_select").value){
-        alert("не заполненно")
-    } 
-  }
-  sndcek();
-  */
+
   console.log(user);
   modal.style.display = "none";
 
@@ -107,14 +85,14 @@ function snd(event){
 //проверка и вывод в случае с полем имени
 toSend_user.onblur = function() {
   if (!document.getElementById("toSend_user").value ) { 
-    toSend_user.classList.add('invalid_txt');
+    toSend_user.classList.add('__notxt');
     txterr.innerHTML = 'Пожалуйста, заполните все поля формы!'
   }
 };
 
 toSend_user.onfocus = function() {
-  if (this.classList.contains('invalid_txt')) {
-    this.classList.remove('invalid_txt');
+  if (this.classList.contains('__notxt')) {
+    this.classList.remove('__notxt');
     txterr.innerHTML = "";
   }
 };
@@ -122,14 +100,14 @@ toSend_user.onfocus = function() {
 //проверка и вывод в случае с полем селектора
 toSend_select.onblur = function() {
   if (!document.getElementById("toSend_toSend_select").value) { 
-    toSend_select.classList.add('invalid_txt');
+    toSend_select.classList.add('__notxt');
     txterr.innerHTML = 'Пожалуйста, заполните все поля формы!'
   }
 };
 
 toSend_select.onfocus = function() {
-  if (this.classList.contains('invalid_txt')) {
-    this.classList.remove('invalid_txt');
+  if (this.classList.contains('__notxt')) {
+    this.classList.remove('__notxt');
     txterr.innerHTML = "";
   }
 };
@@ -137,30 +115,29 @@ toSend_select.onfocus = function() {
 //проверка и вывод в случае с полем текста
 toSend_problem.onblur = function() {
   if (!document.getElementById("toSend_problem").value ) { 
-    toSend_problem.classList.add('invalid_txt');
+    toSend_problem.classList.add('__notxt');
     txterr.innerHTML = 'Пожалуйста, заполните все поля формы!'
   }
 };
 
 toSend_problem.onfocus = function() {
-  if (this.classList.contains('invalid_txt')) {
-    this.classList.remove('invalid_txt');
+  if (this.classList.contains('__notxt')) {
+    this.classList.remove('__notxt');
     txterr.innerHTML = "";
   }
 };
 
-
 //проверка и вывод в случае с почтой
 input.onblur = function() {
   if (!input.value.includes('@')) { 
-    input.classList.add('invalid');
+    input.classList.add('__invalid');
     error.innerHTML = 'Пожалуйста, введите правильный email.'
   }
 };
 
 input.onfocus = function() {
-  if (this.classList.contains('invalid')) {
-    this.classList.remove('invalid');
+  if (this.classList.contains('__invalid')) {
+    this.classList.remove('__invalid');
     error.innerHTML = "";
   }
 };
